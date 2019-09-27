@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka
+#server:
+#  port: 8761
+
+
+# 关闭把自己注册到注册中心
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  # 关闭 自我保护机制
+  server:
+    enable-self-preservation: false

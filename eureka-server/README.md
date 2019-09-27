@@ -1,4 +1,4 @@
-# 廖师兄的springcloud的视频笔记
+
 
 ## SpringCloud Eureka
 
@@ -14,3 +14,6 @@
 - 2.注意SpringBoot和SpringCloud对应的版本
 - 3.在启动类上添加注解@EnableEurekaServer
 - 4.在yml文件中配置端口号和不把自己注册到注册中心
+### Eureka Server集群
+- Eureka Server互相注册
+- 当另一个Client注册到其中的一个Eureka Server中去的时候，另外一个Eureka Server注册中心中也会有这个Client的数据
